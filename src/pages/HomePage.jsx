@@ -19,6 +19,10 @@ const HomePage = () => {
   //   getMinerals(resp.data.results)
   // }
 
+  // useEffect(() => {
+  //   getApiData()
+  // }, [])
+
   return (
     <>
       <div className="linkContainer">
@@ -27,10 +31,7 @@ const HomePage = () => {
             className="logoClick"
             href="https://www.etsy.com/shop/EternallyGratefulCo"
           >
-            <img
-              className="linkLogo"
-              src="https://i.etsystatic.com/isla/fad52c/38072018/isla_500x500.38072018_aafl4hcb.jpg?version=0"
-            />
+            <img className="linkLogo" src="../images/egcologo.png" />
           </a>
           <a
             className="textClick"
@@ -41,13 +42,13 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="moreOutContainer">
+      {/* <div className="moreOutContainer">
         <div className="outerContainer">
           <div className="container">
             <p>Shop With us on Etsy!</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

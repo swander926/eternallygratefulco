@@ -9,7 +9,12 @@ const App = () => {
   return (
     <Router>
       <header>
-        <h1 className="title">Eternally Grateful Co.</h1>
+        <a
+          className="title"
+          href="https://www.etsy.com/shop/EternallyGratefulCo"
+        >
+          Eternally Grateful Co.
+        </a>
         <nav className="constantNavContainer">
           <ul className="constantNav">
             <li>

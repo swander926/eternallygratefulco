@@ -9,50 +9,65 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  margin-top: 5rem;
+  margin-top: 1.5rem;
   background-color: rgb(93, 71, 153);
   color: white;
 }
 
 .title {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
 }
 
 .constantNavContainer {
   display: flex;
   width: 100%;
-  border: solid green 2px;
+  /* border: solid green 2px; */
 }
 
 .constantNav {
-  border: solid red 2px;
   display: flex;
   width: 100%;
   justify-content: space-around;
   flex-flow: row wrap;
   list-style: none;
   font-size: 1.1rem;
+  padding-bottom: -1rem;
+  /* border: solid red 2px; */
 }
 
 .linkLogo {
-  height: 250px;
-  width: 250px;
+  margin-top: 2rem;
+  height: 200px;
+  width: 200px;
   z-index: -1;
 }
 
-.mineralsContainer {
+a {
+  color: white;
+  text-decoration: none;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  font-family: 'Sacramento', cursive;
+  font-size: 1.5rem;
 }
 
-.mineralsBackground {
+.textClick {
+  color: white;
+  text-decoration: none;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  font-size: 3rem;
 }
 
 .linkContainer {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: flex;
   width: 100%;
   justify-content: center;
-  border: solid blue 2px;
+  /* border: solid blue 2px; */
 }
 
 .linkBackground {
@@ -60,27 +75,54 @@ body {
   flex-direction: column;
   width: 75%;
   align-items: center;
-  background-color: rgba(65, 148, 204, 0.514);
-  border: solid red 2px;
+  background: linear-gradient(to bottom, #7927b2, #fb3182);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  padding-top: 6rem;
+  padding-bottom: 13rem;
+  border-radius: 10px;
+  /* background-color: rgba(65, 148, 204, 0.514); */
+  /* border: solid red 2px; */
+}
+
+.mineralsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mineralsBackground {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
+  background: linear-gradient(to bottom, #7927b2, #fb3182);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  padding-top: 6rem;
+  border-radius: 10px;
+}
+
+.pinsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.pinsBackground {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
+  background: linear-gradient(to bottom, #7927b2, #fb3182);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  padding-top: 6rem;
+  border-radius: 10px;
+}
+
+div {
   padding-bottom: 20rem;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
-
-.textClick {
-  color: white;
-  text-decoration: none;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  font-size: 3rem;
-}
-
-.outerContainer {
+/* .outerContainer {
   height: 100vh;
   background: linear-gradient(to bottom, #7927b2, #fb3182);
   display: flex;
@@ -94,9 +136,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.container {
+/* .container {
   width: 90%;
   height: 400px;
   max-width: 960px;
@@ -116,4 +158,4 @@ p {
   max-width: 350px;
   text-transform: uppercase;
   line-height: 0.77;
-}
+} */
