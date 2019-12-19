@@ -52,14 +52,30 @@ a {
   padding-bottom: 2rem;
   font-family: 'Sacramento', cursive;
   font-size: 1.5rem;
+  /* color: var(--mainColor); */
 }
+
+.constantNav a:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px blue;
+}
+
+/* @supports not(-webkit-text-stroke: 2px red) {
+  a:hover {
+    text-shadow:
+      3px 3px 0 var(--mainColor),
+      -1px -1px 0 var(--mainColor),
+      1px -1px 0 var(--mainColor),
+      -1px 1px 0 var(--mainColor),
+      1px 1px 0 var(--mainColor);
+  } */
 
 .textClick {
   color: white;
   text-decoration: none;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 .linkContainer {
@@ -87,6 +103,7 @@ a {
 .mineralsContainer {
   display: flex;
   justify-content: center;
+  border: solid white 3px;
 }
 
 .mineralsBackground {
@@ -99,8 +116,17 @@ a {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
   padding-top: 6rem;
   border-radius: 10px;
+  padding-bottom: 37.75rem;
+  border: solid green 3px;
 }
 
+.mineralsBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid purple 3px;
+  height: 20rem;
+}
 .pinsContainer {
   display: flex;
   justify-content: center;
@@ -116,11 +142,40 @@ a {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
   padding-top: 6rem;
   border-radius: 10px;
+  padding-bottom: 37.75rem;
 }
 
-div {
-  padding-bottom: 20rem;
+.button {
+  background-color: rgb(93, 71, 153); /* Green */
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 4px rgb(76, 56, 131);
 }
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* div {
+  padding-bottom: 20rem;
+} */
 
 /* .outerContainer {
   height: 100vh;

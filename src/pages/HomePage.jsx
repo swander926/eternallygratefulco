@@ -3,17 +3,13 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-//difference between resp and response?
-//.data . results ?
-//axios not working?
-
 const HomePage = () => {
   const [minerals, getMinerals] = useState()
 
   const getApiData = async () => {
-    const resp = await axios.get('https://localhost:5001/api/Tektite')
-    const response = resp.data.results
-    getMinerals(resp.data.results)
+    const resp = await axios.get('https://localhost:5001/api/Tektite') //entire response from API
+    // const response = resp.data
+    getMinerals(resp.data)
   }
 
   useEffect(() => {
@@ -30,12 +26,14 @@ const HomePage = () => {
           >
             <img className="linkLogo" src="../images/egcologo.png" />
           </a>
-          <a
-            className="textClick"
-            href="https://www.etsy.com/shop/EternallyGratefulCo"
-          >
-            Shop with us on Etsy!
-          </a>
+          <button class="button button2">
+            <a
+              className="textClick"
+              href="https://www.etsy.com/shop/EternallyGratefulCo"
+            >
+              Shop with us on Etsy
+            </a>
+          </button>
         </div>
       </div>
 
