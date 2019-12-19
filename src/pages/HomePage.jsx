@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-// import axios from 'axios'
+import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-// import egcologo from 'public/images/egcologo.png'
-
-//do i need useEffect?
 //difference between resp and response?
 //.data . results ?
 //axios not working?
@@ -13,15 +10,15 @@ import { Link } from 'react-router-dom'
 const HomePage = () => {
   const [minerals, getMinerals] = useState()
 
-  // const getApiData = async () => {
-  //   const resp = await axios.get('')
-  //   const response = resp.data.results
-  //   getMinerals(resp.data.results)
-  // }
+  const getApiData = async () => {
+    const resp = await axios.get('https://localhost:5001/api/Tektite')
+    const response = resp.data.results
+    getMinerals(resp.data.results)
+  }
 
-  // useEffect(() => {
-  //   getApiData()
-  // }, [])
+  useEffect(() => {
+    getApiData()
+  }, [])
 
   return (
     <>
